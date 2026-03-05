@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    font-size: 28px;
+}
+
+.pasaran {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid gold;
+    transition: transform 0.3s;
+}
+
+.pasaran:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.pasaran h2 {
+    color: gold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.angka {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.nomor {
+    background: #2a5298;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid gold;
+}
+
+.4d { background: #4a2a98; }
+.3d { background: #2a6b98; }
+.2d { background: #2a9845; }
+
+.bocoran {
+    color: #ffd700;
+    font-style: italic;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255, 215, 0, 0.3);
+    color: #ccc;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* Responsive buat HP */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    .angka {
+        gap: 10px;
+    }
+    
+    .nomor {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
